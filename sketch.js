@@ -1,8 +1,8 @@
-var bgImage;
+ var bgImage;
 
 var card1;
 var yellow_cardImg;
-var card1_btn,card2_btn,card3_btn,card4_btn;
+var card1_btn,card2_btn,card3_btn,card4_btn,card5_btn,card6_btn;
 
 function preload(){
 bgImage=loadImage("assets/starry-sky.jpg");
@@ -30,6 +30,17 @@ function setup() {
   card4_btn.position(700,80)
   card4_btn.size(200,300)
   card4_btn.mouseClicked(card4)
+
+  card5_btn=createImg("assets/Blue_card.svg.png")
+  card5_btn.position(900,80)
+  card5_btn.size(200,300)
+  card5_btn.mouseClicked(card5)
+
+  card6_btn=createImg("assets/Red_card.png")
+  card6_btn.position(1100,80)
+  card6_btn.size(200,300)
+  card6_btn.mouseClicked(card6)
+
 }
 
 function draw() {
@@ -65,3 +76,17 @@ function card3(){
       card4_btn.position(700,80);
       card4_btn.size(200,300);
 }
+function card5(){
+  alert("Star!! You have chosen");
+    card5_btn=createImg("assets/17-LST-The-Star.jpg" )
+    card5_btn.position(900,80);
+    card5_btn.size(200,300);
+}
+function card6(){
+  alert("Moon!! You have chosen");
+    card6_btn=createImg("assets/moon.jpg" )
+    card6_btn.position(1100,80);
+    card6_btn.size(200,300);
+}
+     
+
